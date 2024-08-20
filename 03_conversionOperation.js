@@ -7,7 +7,7 @@ console.log(3+3) // code readability should be high
 
 console.log("vivek")
 
-console.log("tested")
+
 let name="vivek"  //String
 let age = 25  // number
 
@@ -30,4 +30,4 @@ let userPassword = null //null
 // object
 
 
-// console.log(typeof "vivek")
+console.log(typeof "vivek")
