@@ -11,6 +11,15 @@ let myarray = ["superman", "spiderman", "batman", "shaktiman"]
 let arr = 0
 
 while (arr < myarray.length) {
-    console.log(`Value of myarray is ${myarray[arr]}`)
+    // console.log(`Value of myarray is ${myarray[arr]}`)
     arr = arr + 1
 }
+
+// do while loop **************************************
+let score = 1
+
+do {
+    console.log(`Score is ${score}`)
+    score++
+    
+} while (score <= 10);
