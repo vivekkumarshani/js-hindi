@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Guesses calculator</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #212121;
+      color: #fff;
+    }
+    nav {
+      width: 100%;
+      text-align: center;
+      background-color: darkslategrey;
+      height: 80px;
+      line-height: 80px;
+    }
+    nav a {
+      text-decoration: none;
+      /* background-color: #818181; */
+      color: #fff;
+      border: 1px solid white;
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #525252;
+      color: #fff;
+      border: 1px solid #525252;
+    }
+    .container {
+      width: 100%;
+      line-height: 2;
+      padding: 2rem;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #fff;
+      height: 1.5rem;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+    </nav>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <form>
+        <p>
+          <label>Height in CM: <input type="text" id="height" /></label>
+        </p>
+        <p>
+          <label>Weight in KG: <input type="text" id="weight" /></label>
+        </p>
+        <button>calculate</button>
+        <div id="result"></div>
+        <div id="weight_guide">
+          <h3>BMI weight Guide</h3>
+          <p>Under weight = Less than 18.6</p>
+          <p>Normal Range = 18.6 and 249</p>
+          <p>OverWeight = Greater than 24.9</p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>
