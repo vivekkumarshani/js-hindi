@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+
+ let intervalId; // Variable to store the interval ID
+
+const startInterval = function () {
+  document.querySelector("#start").addEventListener("click", function () {
+    // Start the interval and store the interval ID
+    intervalId = setInterval(function (str) {
+      console.log("vivek",Date.now());
+    }, 1000, 'hey');
+  });
+};
+
+const stopInterval = function () {
+  document.querySelector("#stop").addEventListener("click", function () {
+    // Clear the interval using the stored interval ID
+    clearInterval(intervalId);
+    console.log("You stopped the interval");
+  });
+};
+
+// Initialize the functions to set up the event listeners
+startInterval();
+stopInterval();
+
+
+    // const stopInterval = setInterval((str) => {
+    //     console.log("vivek", Date.now())
+
+    // }, 1000, 'h1');
+
+    // clearInterval(stopInterval)
+  </script>
+</html>

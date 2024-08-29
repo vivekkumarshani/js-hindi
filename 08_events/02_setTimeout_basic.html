@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(() => {
+    //    console.log("vivek") 
+    // }, 2000);  setTimeOut kam se kaam wo ek bar call honga hi jo v apne time execute diya honga...
+
+
+//   const sayHello = function () {
+//     console.log("vivek")
+//   }
+// humne kya kiya hain yaha par hm phle function execute kr rhe h aur fir setTimeout ko varibale declear kr rhe hain.
+// (sayHello) yah hmare varibale hain...
+
+//   setTimeout(sayHello, 2000)
+
+
+const changeText = function () {
+    document.querySelector("h1").innerHTML="Best JS course I have seen on youtube"
+}
+
+const chnageMe = setTimeout(changeText, 5000);
+
+document.querySelector("#stop").addEventListener('click', function(){
+    clearTimeout(chnageMe)
+    console.log("Stopped")
+})
+
+
+
+</script>
+</html>
